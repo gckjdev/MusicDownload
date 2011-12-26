@@ -17,6 +17,7 @@
 #import "TopDownloadController.h"
 #import "ResourceCategoryController.h"
 #import "AboutController.h"
+#import "MusicPlayController.h"
 
 #import "DownloadService.h"
 #import "ResourceService.h"
@@ -106,7 +107,13 @@ enum TAB_INDEX {
 					 viewTitle:NSLS(@"kFourthViewTitle")				 
 					 viewImage:DOWNLOAD_ICON
 			  hasNavController:YES			
-			   viewControllers:controllers];	
+			   viewControllers:controllers];
+	
+    [UIUtils addViewController:[MusicPlayController alloc]
+					 viewTitle:NSLS(@"kMusic")				 
+					 viewImage:DOWNLOAD_ICON
+			  hasNavController:YES			
+			   viewControllers:controllers];
 	    
 //    [UIUtils addViewController:[AboutController alloc]
 //                     viewTitle:NSLS(@"Settings")
@@ -118,7 +125,8 @@ enum TAB_INDEX {
                                                   TOP_PRESS_ICON, 
                                                   RESOURCE_PRESS_ICON, 
                                                   BROWSE_PRESS_ICON, 
-                                                  DOWNLOAD_PRESS_ICON, 
+                                                  DOWNLOAD_PRESS_ICON,
+                                                  DOWNLOAD_PRESS_ICON,
 //                                                  ABOUT_PRESS_ICON, 
                                                   nil]];
     	
