@@ -43,5 +43,7 @@
 	<true/>
 	<key>UIPrerenderedIcon</key>
 	<true/>
+	<key>CFHasMusicPlayerTab</key>
+	<true/>
 </dict>
 </plist>

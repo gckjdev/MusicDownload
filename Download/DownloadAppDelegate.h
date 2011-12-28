@@ -14,6 +14,7 @@
 #import "PPTabBarController.h"
 #import "ReviewRequest.h"
 #import "WebViewTouchWindow.h"
+#import "MusicPlayController.h"
 
 #define kAppId			@"488119324"					// To be changed for each project
 #define kMobClickKey	@"4ec3d3045270151da9000025"		// To be changed for each project
@@ -30,4 +31,8 @@
 @property (nonatomic, retain) CoreDataManager       *dataManager;
 @property (nonatomic, retain) ReviewRequest         *reviewRequest;
 
+
+- (void) setSeletedTabbarIndex:(NSInteger)index;
+- (void) gotoMusicPlayerTab;
+- (MusicPlayController*) getMusicPlayerTab;
 @end

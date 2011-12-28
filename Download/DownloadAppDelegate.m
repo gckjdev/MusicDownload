@@ -24,6 +24,8 @@
 
 #import "DownloadResource.h"
 
+#define MUSICPLAYER_TAB 4
+
 NSString* GlobalGetServerURL()
 {
     //   return @"http://192.168.1.101:8000/api/i?";
@@ -253,5 +255,21 @@ enum TAB_INDEX {
 {
 }
 */
+
+- (void) setSeletedTabbarIndex:(NSInteger)index
+{
+    UIButton *button = [_tabBarController.buttons objectAtIndex:index];
+    [_tabBarController selectedTab:button];
+}
+
+- (void) gotoMusicPlayerTab
+{
+    [self setSeletedTabbarIndex:MUSICPLAYER_TAB];
+}
+
+- (MusicPlayController*) getMusicPlayerTab
+{
+    return (MusicPlayController*)([[self.tabBarController.viewControllers objectAtIndex:MUSICPLAYER_TAB] topViewController]);
+}
 
 @end
