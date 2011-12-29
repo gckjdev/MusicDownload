@@ -262,6 +262,11 @@ enum TAB_INDEX {
     [_tabBarController selectedTab:button];
 }
 
+- (BOOL)hasMusicPlayerTab
+{
+    return (BOOL)[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFHasMusicPlayerTab"];
+}
+
 - (void) gotoMusicPlayerTab
 {
     [self setSeletedTabbarIndex:MUSICPLAYER_TAB];

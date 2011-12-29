@@ -33,6 +33,7 @@
 
 
 - (void) setSeletedTabbarIndex:(NSInteger)index;
+- (BOOL)hasMusicPlayerTab;
 - (void) gotoMusicPlayerTab;
 - (MusicPlayController*) getMusicPlayerTab;
 @end
