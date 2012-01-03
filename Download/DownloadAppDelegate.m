@@ -264,7 +264,7 @@ enum TAB_INDEX {
 
 - (BOOL)hasMusicPlayerTab
 {
-    return (BOOL)[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFHasMusicPlayerTab"];
+    return [[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFHasMusicPlayerTab"]boolValue];
 }
 
 - (void) gotoMusicPlayerTab
