@@ -500,6 +500,12 @@
 		EA1B00C314824456002A1E8B /* DecompressManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EA1B00C214824456002A1E8B /* DecompressManager.m */; };
 		EA24B5471473632700BFE1BF /* TopDownloadItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EA24B5451473632700BFE1BF /* TopDownloadItemCell.m */; };
 		EA24B5481473632700BFE1BF /* TopDownloadItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA24B5461473632700BFE1BF /* TopDownloadItemCell.xib */; };
+		EA92E1F014B3FE4B00469067 /* VideoPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92E1EE14B3FE4B00469067 /* VideoPlayController.m */; };
+		EA92E1F114B3FE4B00469067 /* VideoPlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA92E1EF14B3FE4B00469067 /* VideoPlayController.xib */; };
+		EA92E1F514B3FE5A00469067 /* WallpaperController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92E1F314B3FE5A00469067 /* WallpaperController.m */; };
+		EA92E1F614B3FE5A00469067 /* WallpaperController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA92E1F414B3FE5A00469067 /* WallpaperController.xib */; };
+		EA92E1FA14B3FE6700469067 /* BookController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA92E1F814B3FE6700469067 /* BookController.m */; };
+		EA92E1FB14B3FE6700469067 /* BookController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA92E1F914B3FE6700469067 /* BookController.xib */; };
 		EAAF75F5147F60E8009A61CE /* ViewDecompressItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAAF75F3147F60E7009A61CE /* ViewDecompressItemController.m */; };
 		EAAF75F6147F60E8009A61CE /* ViewDecompressItemController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EAAF75F4147F60E8009A61CE /* ViewDecompressItemController.xib */; };
 		EAC56224147CE36C00DD2AFF /* ViewImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAC56222147CE36C00DD2AFF /* ViewImageController.m */; };
@@ -1296,6 +1302,15 @@
 		EA24B5441473632700BFE1BF /* TopDownloadItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopDownloadItemCell.h; sourceTree = "<group>"; };
 		EA24B5451473632700BFE1BF /* TopDownloadItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopDownloadItemCell.m; sourceTree = "<group>"; };
 		EA24B5461473632700BFE1BF /* TopDownloadItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopDownloadItemCell.xib; sourceTree = "<group>"; };
+		EA92E1ED14B3FE4B00469067 /* VideoPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayController.h; sourceTree = "<group>"; };
+		EA92E1EE14B3FE4B00469067 /* VideoPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayController.m; sourceTree = "<group>"; };
+		EA92E1EF14B3FE4B00469067 /* VideoPlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoPlayController.xib; sourceTree = "<group>"; };
+		EA92E1F214B3FE5A00469067 /* WallpaperController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperController.h; sourceTree = "<group>"; };
+		EA92E1F314B3FE5A00469067 /* WallpaperController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperController.m; sourceTree = "<group>"; };
+		EA92E1F414B3FE5A00469067 /* WallpaperController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WallpaperController.xib; sourceTree = "<group>"; };
+		EA92E1F714B3FE6700469067 /* BookController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookController.h; sourceTree = "<group>"; };
+		EA92E1F814B3FE6700469067 /* BookController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookController.m; sourceTree = "<group>"; };
+		EA92E1F914B3FE6700469067 /* BookController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookController.xib; sourceTree = "<group>"; };
 		EAAF75F2147F60E7009A61CE /* ViewDecompressItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewDecompressItemController.h; sourceTree = "<group>"; };
 		EAAF75F3147F60E7009A61CE /* ViewDecompressItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewDecompressItemController.m; sourceTree = "<group>"; };
 		EAAF75F4147F60E8009A61CE /* ViewDecompressItemController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDecompressItemController.xib; sourceTree = "<group>"; };
@@ -2691,6 +2706,9 @@
 		CAEA38E11467C3FA006D2975 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				EA92E1EC14B3FE3700469067 /* Book */,
+				EA92E1EB14B3FE2800469067 /* Wallpaper */,
+				EA92E1E914B3FE1300469067 /* Video */,
 				EA27B65814A81A630018361E /* Music */,
 				CA85C2751490A0BE0089175B /* Common */,
 				CAF71213146F659200FD161D /* Action */,
@@ -2904,6 +2922,36 @@
 				C2C1F7BE14A9643100EED2D7 /* MusicPlayController.xib */,
 			);
 			name = Music;
+			sourceTree = "<group>";
+		};
+		EA92E1E914B3FE1300469067 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				EA92E1ED14B3FE4B00469067 /* VideoPlayController.h */,
+				EA92E1EE14B3FE4B00469067 /* VideoPlayController.m */,
+				EA92E1EF14B3FE4B00469067 /* VideoPlayController.xib */,
+			);
+			name = Video;
+			sourceTree = "<group>";
+		};
+		EA92E1EB14B3FE2800469067 /* Wallpaper */ = {
+			isa = PBXGroup;
+			children = (
+				EA92E1F214B3FE5A00469067 /* WallpaperController.h */,
+				EA92E1F314B3FE5A00469067 /* WallpaperController.m */,
+				EA92E1F414B3FE5A00469067 /* WallpaperController.xib */,
+			);
+			name = Wallpaper;
+			sourceTree = "<group>";
+		};
+		EA92E1EC14B3FE3700469067 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				EA92E1F714B3FE6700469067 /* BookController.h */,
+				EA92E1F814B3FE6700469067 /* BookController.m */,
+				EA92E1F914B3FE6700469067 /* BookController.xib */,
+			);
+			name = Book;
 			sourceTree = "<group>";
 		};
 		EAE9CFA01485F8E800EB8755 /* ssziparchive */ = {
@@ -3224,6 +3272,9 @@
 				CAF6A40F1494F7730007199B /* UIBarButtonItemArrowRight.png in Resources */,
 				CAF6A4101494F7730007199B /* UIBarButtonItemArrowRight@2x.png in Resources */,
 				C2C1F7C014A9643100EED2D7 /* MusicPlayController.xib in Resources */,
+				EA92E1F114B3FE4B00469067 /* VideoPlayController.xib in Resources */,
+				EA92E1F614B3FE5A00469067 /* WallpaperController.xib in Resources */,
+				EA92E1FB14B3FE6700469067 /* BookController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3518,6 +3569,9 @@
 				CAF6A40B1494F7730007199B /* UIViewTap.m in Sources */,
 				CAF6A40C1494F7730007199B /* ZoomingScrollView.m in Sources */,
 				C2C1F7BF14A9643100EED2D7 /* MusicPlayController.m in Sources */,
+				EA92E1F014B3FE4B00469067 /* VideoPlayController.m in Sources */,
+				EA92E1F514B3FE5A00469067 /* WallpaperController.m in Sources */,
+				EA92E1FA14B3FE6700469067 /* BookController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
