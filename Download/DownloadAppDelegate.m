@@ -54,6 +54,7 @@ enum TAB_INDEX {
 @synthesize tabBarController = _tabBarController;
 @synthesize dataManager;
 @synthesize reviewRequest;
+@synthesize musicPlayerTab;
 
 - (NSString *)appKey
 {
@@ -92,17 +93,26 @@ enum TAB_INDEX {
     
 	NSMutableArray* controllers = [[NSMutableArray alloc] init];
     
-	[UIUtils addViewController:[TopDownloadController alloc]
-					 viewTitle:NSLS(@"kFirstViewTitle")
-					 viewImage:TOP_ICON
-			  hasNavController:YES			
-			   viewControllers:controllers];	
+    if ([LocaleUtils isChina]) {
+        [UIUtils addViewController:[TopDownloadController alloc]
+                         viewTitle:NSLS(@"kFirstViewTitle")
+                         viewImage:TOP_ICON
+                  hasNavController:YES			
+                   viewControllers:controllers];	
+        
+        [UIUtils addViewController:[ResourceCategoryController alloc]
+                         viewTitle:NSLS(@"kSecondViewTitle")
+                         viewImage:RESOURCE_ICON
+                  hasNavController:YES			
+                   viewControllers:controllers];
+        
+        self.musicPlayerTab = 4;
+    }
+    else {
+        self.musicPlayerTab = 2;
+    }
     
-	[UIUtils addViewController:[ResourceCategoryController alloc]
-					 viewTitle:NSLS(@"kSecondViewTitle")
-					 viewImage:RESOURCE_ICON
-			  hasNavController:YES			
-			   viewControllers:controllers];	
+	
     
 	[UIUtils addViewController:[BrowseController alloc]
                      viewTitle:NSLS(@"kThirdViewTitle")				 
@@ -128,14 +138,26 @@ enum TAB_INDEX {
 //              hasNavController:YES			
 //               viewControllers:controllers];	        
     
-    [self.tabBarController setSelectedImageArray:[NSArray arrayWithObjects:
-                                                  TOP_PRESS_ICON, 
-                                                  RESOURCE_PRESS_ICON, 
-                                                  BROWSE_PRESS_ICON, 
-                                                  DOWNLOAD_PRESS_ICON,
-                                                  DOWNLOAD_PRESS_ICON,
-//                                                  ABOUT_PRESS_ICON, 
-                                                  nil]];
+    if ([LocaleUtils isChina]) {
+        [self.tabBarController setSelectedImageArray:[NSArray arrayWithObjects:
+                                                      TOP_PRESS_ICON, 
+                                                      RESOURCE_PRESS_ICON, 
+                                                      BROWSE_PRESS_ICON, 
+                                                      DOWNLOAD_PRESS_ICON,
+                                                      DOWNLOAD_PRESS_ICON,
+                                                      //                                                  ABOUT_PRESS_ICON, 
+                                                      nil]];
+    }
+    else
+    {
+        [self.tabBarController setSelectedImageArray:[NSArray arrayWithObjects:
+                                                      BROWSE_PRESS_ICON, 
+                                                      DOWNLOAD_PRESS_ICON,
+                                                      DOWNLOAD_PRESS_ICON,
+                                                      //                                                  ABOUT_PRESS_ICON, 
+                                                      nil]];
+    }
+
     	
 	self.tabBarController.viewControllers = controllers;	
     self.tabBarController.selectedIndex = TAB_BROWSE;
@@ -265,12 +287,12 @@ enum TAB_INDEX {
 
 - (void) gotoMusicPlayerTab
 {
-    [self setSeletedTabbarIndex:MUSICPLAYER_TAB];
+    [self setSeletedTabbarIndex:self.musicPlayerTab];
 }
 
 - (MusicPlayController*) getMusicPlayerTab
 {
-    return (MusicPlayController*)([[self.tabBarController.viewControllers objectAtIndex:MUSICPLAYER_TAB] topViewController]);
+    return (MusicPlayController*)([[self.tabBarController.viewControllers objectAtIndex:self.musicPlayerTab] topViewController]);
 }
 // for Wallpaper
 - (BOOL)hasWallpaperTab
