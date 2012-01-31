@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A3A9F40B14D68A3F0066E8E3 /* AudioPlayerVoice.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A9F40A14D68A3F0066E8E3 /* AudioPlayerVoice.png */; };
 		A3B3591B14BD3322009A971A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B3591914BD3322009A971A /* Default.png */; };
 		A3B3591C14BD3322009A971A /* Default@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B3591A14BD3322009A971A /* Default@2X.png */; };
 		C2C1F7BF14A9643100EED2D7 /* MusicPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C1F7BD14A9643100EED2D7 /* MusicPlayController.m */; };
@@ -530,6 +531,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A3A9F40A14D68A3F0066E8E3 /* AudioPlayerVoice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudioPlayerVoice.png; sourceTree = "<group>"; };
 		A3B3591914BD3322009A971A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A3B3591A14BD3322009A971A /* Default@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2X.png"; sourceTree = "<group>"; };
 		C2C1F7BC14A9643100EED2D7 /* MusicPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayController.h; sourceTree = "<group>"; };
@@ -2834,6 +2836,7 @@
 		CAF6A3B71494F4340007199B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A3A9F40A14D68A3F0066E8E3 /* AudioPlayerVoice.png */,
 				CAF6A3B81494F4340007199B /* AudioPlayerAlbumInfo.png */,
 				CAF6A3B91494F4340007199B /* AudioPlayerBarBackground.png */,
 				CAF6A3BA1494F4340007199B /* AudioPlayerNextTrack.png */,
@@ -3273,6 +3276,7 @@
 				EA92E1FB14B3FE6700469067 /* BookController.xib in Resources */,
 				A3B3591B14BD3322009A971A /* Default.png in Resources */,
 				A3B3591C14BD3322009A971A /* Default@2X.png in Resources */,
+				A3A9F40B14D68A3F0066E8E3 /* AudioPlayerVoice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
