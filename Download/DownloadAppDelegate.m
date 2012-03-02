@@ -147,6 +147,8 @@ enum TAB_INDEX {
                                                       DOWNLOAD_PRESS_ICON,
                                                       //                                                  ABOUT_PRESS_ICON, 
                                                       nil]];
+
+        self.tabBarController.selectedIndex = TAB_BROWSE;
     }
     else
     {
@@ -160,7 +162,6 @@ enum TAB_INDEX {
 
     	
 	self.tabBarController.viewControllers = controllers;	
-    self.tabBarController.selectedIndex = TAB_BROWSE;
 	[controllers release];
 }
 
