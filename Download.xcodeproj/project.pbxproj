@@ -10,6 +10,9 @@
 		A3A9F40B14D68A3F0066E8E3 /* AudioPlayerVoice.png in Resources */ = {isa = PBXBuildFile; fileRef = A3A9F40A14D68A3F0066E8E3 /* AudioPlayerVoice.png */; };
 		A3B3591B14BD3322009A971A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B3591914BD3322009A971A /* Default.png */; };
 		A3B3591C14BD3322009A971A /* Default@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = A3B3591A14BD3322009A971A /* Default@2X.png */; };
+		A3F7A3AD156C92FF004975B1 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F7A3AB156C92FF004975B1 /* libGoogleAdMobAds.a */; };
+		A3F7A3AE156C92FF004975B1 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = A3F7A3AC156C92FF004975B1 /* README.txt */; };
+		A3F7A3B2156C930F004975B1 /* DownloadAd.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F7A3B1156C930F004975B1 /* DownloadAd.m */; };
 		C2C1F7BF14A9643100EED2D7 /* MusicPlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2C1F7BD14A9643100EED2D7 /* MusicPlayController.m */; };
 		C2C1F7C014A9643100EED2D7 /* MusicPlayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2C1F7BE14A9643100EED2D7 /* MusicPlayController.xib */; };
 		CA11360B1473A13C004D517E /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = CA11360A1473A13B004D517E /* Site.m */; };
@@ -534,6 +537,16 @@
 		A3A9F40A14D68A3F0066E8E3 /* AudioPlayerVoice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AudioPlayerVoice.png; sourceTree = "<group>"; };
 		A3B3591914BD3322009A971A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		A3B3591A14BD3322009A971A /* Default@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2X.png"; sourceTree = "<group>"; };
+		A3F7A3A5156C92FF004975B1 /* GADBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerView.h; sourceTree = "<group>"; };
+		A3F7A3A6156C92FF004975B1 /* GADBannerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADBannerViewDelegate.h; sourceTree = "<group>"; };
+		A3F7A3A7156C92FF004975B1 /* GADInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitial.h; sourceTree = "<group>"; };
+		A3F7A3A8156C92FF004975B1 /* GADInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADInterstitialDelegate.h; sourceTree = "<group>"; };
+		A3F7A3A9156C92FF004975B1 /* GADRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequest.h; sourceTree = "<group>"; };
+		A3F7A3AA156C92FF004975B1 /* GADRequestError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GADRequestError.h; sourceTree = "<group>"; };
+		A3F7A3AB156C92FF004975B1 /* libGoogleAdMobAds.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAdMobAds.a; sourceTree = "<group>"; };
+		A3F7A3AC156C92FF004975B1 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		A3F7A3B0156C930F004975B1 /* DownloadAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadAd.h; sourceTree = "<group>"; };
+		A3F7A3B1156C930F004975B1 /* DownloadAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadAd.m; sourceTree = "<group>"; };
 		C2C1F7BC14A9643100EED2D7 /* MusicPlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlayController.h; sourceTree = "<group>"; };
 		C2C1F7BD14A9643100EED2D7 /* MusicPlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlayController.m; sourceTree = "<group>"; };
 		C2C1F7BE14A9643100EED2D7 /* MusicPlayController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicPlayController.xib; sourceTree = "<group>"; };
@@ -1360,6 +1373,7 @@
 				CAEA30D41467BCAE006D2975 /* CoreGraphics.framework in Frameworks */,
 				CAEA380C1467BD14006D2975 /* libMobClickLibrary_1.6.4.a in Frameworks */,
 				CA19EFBE1484C2C800CDF114 /* Unrar4iOS.framework in Frameworks */,
+				A3F7A3AD156C92FF004975B1 /* libGoogleAdMobAds.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1376,6 +1390,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A3F7A3A4156C92FF004975B1 /* GoogleAdMobAdsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A3F7A3A5156C92FF004975B1 /* GADBannerView.h */,
+				A3F7A3A6156C92FF004975B1 /* GADBannerViewDelegate.h */,
+				A3F7A3A7156C92FF004975B1 /* GADInterstitial.h */,
+				A3F7A3A8156C92FF004975B1 /* GADInterstitialDelegate.h */,
+				A3F7A3A9156C92FF004975B1 /* GADRequest.h */,
+				A3F7A3AA156C92FF004975B1 /* GADRequestError.h */,
+				A3F7A3AB156C92FF004975B1 /* libGoogleAdMobAds.a */,
+				A3F7A3AC156C92FF004975B1 /* README.txt */,
+			);
+			path = GoogleAdMobAdsSDK;
+			sourceTree = "<group>";
+		};
 		CA19EEE31484C27300CDF114 /* Unrar4iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1958,6 +1987,7 @@
 		CAEA339E1467BD12006D2975 /* Common_Iphone */ = {
 			isa = PBXGroup;
 			children = (
+				A3F7A3A4156C92FF004975B1 /* GoogleAdMobAdsSDK */,
 				CAF6A3EF1494F7730007199B /* PhotoBrowser */,
 				CAF6A3B61494F4340007199B /* MDAudioPlayerController */,
 				EAE9CFA01485F8E800EB8755 /* ssziparchive */,
@@ -2797,6 +2827,8 @@
 		CAEA38E51467C3FA006D2975 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				A3F7A3B0156C930F004975B1 /* DownloadAd.h */,
+				A3F7A3B1156C930F004975B1 /* DownloadAd.m */,
 				CA19F0D81484CDB900CDF114 /* DownloadResource.h */,
 				CA19F0D91484CDB900CDF114 /* DownloadResource.m */,
 			);
@@ -3277,6 +3309,7 @@
 				A3B3591B14BD3322009A971A /* Default.png in Resources */,
 				A3B3591C14BD3322009A971A /* Default@2X.png in Resources */,
 				A3A9F40B14D68A3F0066E8E3 /* AudioPlayerVoice.png in Resources */,
+				A3F7A3AE156C92FF004975B1 /* README.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3574,6 +3607,7 @@
 				EA92E1F014B3FE4B00469067 /* VideoPlayController.m in Sources */,
 				EA92E1F514B3FE5A00469067 /* WallpaperController.m in Sources */,
 				EA92E1FA14B3FE6700469067 /* BookController.m in Sources */,
+				A3F7A3B2156C930F004975B1 /* DownloadAd.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3779,6 +3813,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../Common_Iphone/iFly/bin\"",
 					"\"$(SRCROOT)/../Common_Iphone/MobClick\"",
+					"\"$(SRCROOT)/../Common_Iphone/GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -3803,6 +3838,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/../Common_Iphone/iFly/bin\"",
 					"\"$(SRCROOT)/../Common_Iphone/MobClick\"",
+					"\"$(SRCROOT)/../Common_Iphone/GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "0800EA77-3040-4706-A496-EC0131B765C6";
